@@ -18,9 +18,9 @@ Read [NESI.md](NESI.md) to find out how to run the notebooks on NeSI.
 All the packages required by the tutorial are already installed on NeSI's [jupyter hub](https://jupyter.nesi.org.nz/).
 
 If you prefer to run on your own computer then we recommend that you download and install [miniconda](http://conda.pydata.org/miniconda.html).
-Once `miniconda` is installed, the following command will install all required packages in your Python environment.
+Once `miniconda` is installed, navigate to your local copy of the repository and use the following command to create a Conda environment with all required packages:
 ```
-conda create -n skl_tut -c conda-forge python=3.8 numpy scipy matplotlib=3.2.2 scikit-learn=0.22.1 pillow jupyterlab ipywidgets pandas
+conda env create -f environment.yml
 ```
 Then activate your environment:
 ```
