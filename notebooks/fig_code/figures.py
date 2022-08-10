@@ -206,7 +206,6 @@ def plot_image_components(x, coefficients=None, mean=0, components=None,
         components = np.eye(len(coefficients), len(x))
         
     mean = np.zeros_like(x) + mean
-        
 
     fig = plt.figure(figsize=(1.2 * (5 + n_components), 1.2 * 2))
     g = plt.GridSpec(2, 5 + n_components, hspace=0.3)
@@ -242,7 +241,6 @@ def plot_pca_interactive(data, n_components=6):
     Xproj = pca.fit_transform(data)
 
     def show_decomp(i=0):
-        plot_image_components(data[i], Xproj[i],
-                              pca.mean_, pca.components_)
-    
-    interact_adaptor(show_decomp, i=(0, data.shape[0] - 1));
+        plot_image_components(data[i], Xproj[i], pca.mean_, pca.components_)
+
+    return interact_adaptor(show_decomp, i=(0, data.shape[0] - 1));
