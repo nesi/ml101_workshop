@@ -122,6 +122,7 @@ C: 1000
 ### The Scikit-learn Estimator Object
 
 **Question:** Can you name other parameters of `LinearRegression`? Use the official documentation to find them.
+
 -
 -
 -
@@ -365,7 +366,7 @@ E: You need to collect more training data.
 -
 -
 
-### Fit a baseline model:** logistic regression
+### Fit a baseline model: logistic regression
 
 **Exercise (breakout rooms, 15 min):** Use the space below to share any questions or comments.
 
