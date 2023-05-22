@@ -9,6 +9,11 @@ Original tutorial material from *Jake VanderPlas*
 This repository contains notebooks and other files associated with the [Scikit-learn](http://scikit-learn.org) tutorial.
 The notebooks have been updated by NeSI (http://github.com/nesi/sklearn_tutorial.git) to run with recent versions of Python and dependencies.
 
+Recordings of the original workshop are available on Youtube:
+
+- https://www.youtube.com/watch?v=L7R4HUQ-eQ0 (3 hours version)
+- https://www.youtube.com/watch?v=HC0J_SPm9co (1.5 hours version)
+
 
 ## Installation Notes
 
