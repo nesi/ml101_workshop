@@ -17,14 +17,19 @@ Recordings of the original workshop are available on Youtube:
 
 ## Installation Notes
 
-Read [NESI.md](NESI.md) to find out how to run the notebooks on NeSI.
-All the packages required by the tutorial are already installed on [NeSI JupyterHub](https://jupyter.nesi.org.nz/).
+To run the notebooks on your laptop, you will need to clone the repository:
 
-If you prefer to run on your own computer then we recommend that you download and install [Miniconda](https://docs.conda.io/en/latest/miniconda.html).
+```
+git clone https://github.com/nesi/sklearn_tutorial.git
+```
+
+Note also that some of the code in these notebooks will not work outside the directory structure of this tutorial, so it is important to clone the full repository if possible.
+
+Then, we recommend that you download and install [Miniconda](https://docs.conda.io/en/latest/miniconda.html).
 Once Miniconda is installed, navigate to your local copy of the repository and use the following command to create a Conda environment with all required packages:
 
 ```
-conda env create -f environment.yml
+conda env create -f environment.lock.yml
 ```
 
 Then activate your environment:
@@ -33,33 +38,21 @@ Then activate your environment:
 conda activate skl_tut
 ```
 
-The tutorial material has been tested on NeSI with the following package versions:
+The tutorial material has been tested with the following package versions:
 
 - Python version 3.10.5
 - `numpy` version 1.22.4: https://www.numpy.org
 - `scipy` version 1.8.1: https://www.scipy.org
 - `matplotlib` version 3.5.2: https://matplotlib.org
 - `scikit-learn` version 1.1.1: https://scikit-learn.org
-- `jupyterlab` version 3.4.3: https://jupyterlab.readthedocs.io
-- `ipywidgets` version 7.7.0: https://ipywidgets.readthedocs.io
+- `jupyterlab` version 4.1.2: https://jupyterlab.readthedocs.io
+- `ipywidgets` version 8.1.2: https://ipywidgets.readthedocs.io
 - `pandas` version 1.4.2: https://pandas.pydata.org/
-
-
-## Downloading the Tutorial Materials
-
-We have already installed all the notebooks on [NeSI JupyterHub](https://jupyter.nesi.org.nz/).
-However, if you prefer to run on your laptop, you will need to clone the repository:
-
-```
-git clone https://github.com/nesi/sklearn_tutorial.git
-```
-
-Note also that some of the code in these notebooks will not work outside the directory structure of this tutorial, so it is important to clone the full repository if possible.
 
 
 ## Notebook Listing
 
-If you have followed the installation instructions to run on your laptop, start `JupyterLab`:
+Start `JupyterLab` using:
 
 ```
 jupyter lab 
