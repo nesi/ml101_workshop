@@ -20,7 +20,7 @@ Recordings of the original workshop are available on Youtube:
 To run the notebooks on your laptop, you will need to clone the repository:
 
 ```
-git clone https://github.com/nesi/sklearn_tutorial.git
+git clone https://github.com/nesi/ml101_workshop.git
 ```
 
 Note also that some of the code in these notebooks will not work outside the directory structure of this tutorial, so it is important to clone the full repository if possible.
