@@ -25,8 +25,8 @@ git clone https://github.com/nesi/sklearn_tutorial.git
 
 Note also that some of the code in these notebooks will not work outside the directory structure of this tutorial, so it is important to clone the full repository if possible.
 
-Then, we recommend that you download and install [Miniconda](https://docs.conda.io/en/latest/miniconda.html).
-Once Miniconda is installed, navigate to your local copy of the repository and use the following command to create a Conda environment with all required packages:
+Then, we recommend that you download and install [Miniforge](https://github.com/conda-forge/miniforge).
+Once Miniforge is installed, navigate to your local copy of the repository and use the following command to create a Conda environment with all required packages:
 
 ```
 conda env create -f environment.lock.yml
