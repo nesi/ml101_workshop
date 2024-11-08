@@ -29,6 +29,7 @@ Then, we recommend that you download and install [Miniforge](https://github.com/
 Once Miniforge is installed, navigate to your local copy of the repository and use the following command to create a Conda environment with all required packages:
 
 ```
+cd ml101_workshop/
 conda env create -f environment.lock.yml
 ```
 
