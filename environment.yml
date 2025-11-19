@@ -13,3 +13,7 @@ dependencies:
     - jupyterlab==4.1.2
     - ipywidgets==8.1.2
     - pandas==1.4.2
+    - nltk==3.7
+    - selenium==4.38.0
+    - beautifulsoup4==4.11.1
+    - PyPDF2==2.10.5
