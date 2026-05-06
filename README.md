@@ -41,14 +41,15 @@ conda activate skl_tut
 
 The tutorial material has been tested with the following package versions:
 
-- Python version 3.10.5
-- `numpy` version 1.22.4: https://www.numpy.org
-- `scipy` version 1.8.1: https://www.scipy.org
-- `matplotlib` version 3.5.2: https://matplotlib.org
-- `scikit-learn` version 1.1.1: https://scikit-learn.org
-- `jupyterlab` version 4.1.2: https://jupyterlab.readthedocs.io
-- `ipywidgets` version 8.1.2: https://ipywidgets.readthedocs.io
-- `pandas` version 1.4.2: https://pandas.pydata.org/
+- Python version 3.12.7
+- `numpy` version 2.4.4: [numpy.org](https://www.numpy.org)
+- `scipy` version 1.17.1: [scipy.org](https://www.scipy.org)
+- `matplotlib` version 3.10.9: [matplotlib.org](https://matplotlib.org)
+- `scikit-learn` version 1.8.0: [scikit-learn.org](https://scikit-learn.org)
+- `jupyterlab` version 4.5.7: [jupyterlab docs](https://jupyterlab.readthedocs.io)
+- `ipywidgets` version 8.1.8: [ipywidgets docs](https://ipywidgets.readthedocs.io)
+- `pandas` version 3.0.2: [pandas.pydata.org](https://pandas.pydata.org/)
+- `pypdf` version 6.10.2: [pypdf docs](https://pypdf.readthedocs.io)
 
 
 ## Notebook Listing
