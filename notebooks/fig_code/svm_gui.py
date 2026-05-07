@@ -13,7 +13,6 @@ negative examples click the right button.
 If all examples are from the same class, it uses a one-class SVM.
 
 """
-from __future__ import division, print_function
 
 print(__doc__)
 
@@ -25,17 +24,16 @@ import matplotlib
 matplotlib.use('TkAgg')
 
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
-from matplotlib.backends.backend_tkagg import NavigationToolbar2TkAgg
+from matplotlib.backends.backend_tkagg import NavigationToolbar2Tk
 from matplotlib.figure import Figure
 from matplotlib.contour import ContourSet
 
-import Tkinter as Tk
+import tkinter as Tk
 import sys
 import numpy as np
 
 from sklearn import svm
 from sklearn.datasets import dump_svmlight_file
-from sklearn.externals.six.moves import xrange
 
 y_min, y_max = -50, 50
 x_min, x_max = -50, 50
@@ -146,13 +144,12 @@ class View(object):
         ax.set_xlim((x_min, x_max))
         ax.set_ylim((y_min, y_max))
         canvas = FigureCanvasTkAgg(f, master=root)
-        canvas.show()
+        canvas.draw()
         canvas.get_tk_widget().pack(side=Tk.TOP, fill=Tk.BOTH, expand=1)
-        canvas._tkcanvas.pack(side=Tk.TOP, fill=Tk.BOTH, expand=1)
         canvas.mpl_connect('key_press_event', self.onkeypress)
         canvas.mpl_connect('key_release_event', self.onkeyrelease)
         canvas.mpl_connect('button_press_event', self.onclick)
-        toolbar = NavigationToolbar2TkAgg(canvas, root)
+        toolbar = NavigationToolbar2Tk(canvas, root)
         toolbar.update()
         self.shift_down = False
         self.controllbar = ControllBar(root, controller)
@@ -166,8 +163,8 @@ class View(object):
 
     def plot_kernels(self):
         self.ax.text(-50, -60, "Linear: $u^T v$")
-        self.ax.text(-20, -60, "RBF: $\exp (-\gamma \| u-v \|^2)$")
-        self.ax.text(10, -60, "Poly: $(\gamma \, u^T v + r)^d$")
+        self.ax.text(-20, -60, r"RBF: $\exp (-\gamma \| u-v \|^2)$")
+        self.ax.text(10, -60, r"Poly: $(\gamma \, u^T v + r)^d$")
 
     def onkeypress(self, event):
         if event.key == "shift":
@@ -194,7 +191,7 @@ class View(object):
 
     def update(self, event, model):
         if event == "examples_loaded":
-            for i in xrange(len(model.data)):
+            for i in range(len(model.data)):
                 self.update_example(model, i)
 
         if event == "example_added":

@@ -3,17 +3,17 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  - python=3.10.5
-  - pip=22.0.4
+  - python=3.12.7
+  - pip=25.1
   - pip:
-    - numpy==1.22.4
-    - scipy==1.8.1
-    - matplotlib==3.5.2
-    - scikit-learn==1.1.1
-    - jupyterlab==4.1.2
-    - ipywidgets==8.1.2
-    - pandas==1.4.2
-    - nltk==3.7
-    - selenium==4.38.0
-    - beautifulsoup4==4.11.1
-    - PyPDF2==2.10.5
+    - numpy==2.4.4
+    - scipy==1.17.1
+    - matplotlib==3.10.9
+    - scikit-learn==1.8.0
+    - jupyterlab==4.5.7
+    - ipywidgets==8.1.8
+    - pandas==3.0.2
+    - nltk==3.9.4
+    - selenium==4.43.0
+    - beautifulsoup4==4.14.3
+    - pypdf==6.10.2
